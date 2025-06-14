@@ -77,12 +77,21 @@ function deleteTask(i) {
 }
 
 function listTasks() {
-  var html = "";
+  var tableHtml = "";
   for (var i = 0; i < taskCompleted.length; i++) {
-    html += taskCompleted[i].name + " " + taskCompleted[i].priority + "\n";
+    tableHtml +=
+      "<tr><td>" +
+      taskCompleted[i].name +
+      "</td><td>" +
+      taskCompleted[i].priority +
+      "</td></tr>";
   }
-  $("#completedTasksList").text(html);
-  $("#myModal").css("display", "block");
+  $("#completedTasksTable").html(tableHtml);
+  $("#completedTasksModal").css("display", "block");
+}
+
+function closeModal() {
+  $("#completedTasksModal").css("display", "none");
 }
 
 $(".close").click(function () {
