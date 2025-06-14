@@ -154,3 +154,29 @@ title {
   text-decoration: none;
   cursor: pointer;
 }
+
+.priority-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+  margin-left: 8px;
+  text-transform: capitalize;
+}
+
+.priority-pill.critical {
+  background-color: #e74c3c; /* Red */
+}
+
+.priority-pill.high {
+  background-color: #f39c12; /* Orange */
+}
+
+.priority-pill.medium {
+  background-color: #3498db; /* Blue */
+}
+
+.priority-pill.low {
+  background-color: #2ecc71; /* Green */
+}

@@ -13,10 +13,12 @@ function loadList() {
     listHtml +=
       '<div class="tasks">' +
       allTasks[i]["name"] +
-      "" +
-      " [" +
+      ' <span class="priority-pill ' +
+      allTasks[i]["priority"].toLowerCase() +
+      '">' +
       allTasks[i]["priority"] +
-      ']<div class="icons"><i class="fa fa-check checkButton" onclick="completeTask(' +
+      "</span>" +
+      '<div class="icons"><i class="fa fa-check checkButton" onclick="completeTask(' +
       i +
       ')" aria-hidden="true"></i> <i class="fa fa-trash deleteButton" onclick="deleteTask(' +
       i +
