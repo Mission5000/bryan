@@ -45,6 +45,7 @@ function addTasks() {
     };
     allTasks.push(task);
     $("#inputTask").val("");
+    loadList(); // Refresh the task list in the UI
   }
 }
 
