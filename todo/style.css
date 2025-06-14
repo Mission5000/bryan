@@ -1,0 +1,156 @@
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+title {
+  font-family: system-ui;
+  background: #f06d06;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.list {
+  max-width: 800px;
+  min-height: 10px;
+  background-color: #ffffff;
+  color: #f06d06;
+  margin: 0px auto 25px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.bar {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #f06d06 !important;
+  border-radius: 40px;
+  padding: 2px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.searchbar {
+  border-radius: 28px;
+  align-items: flex;
+  padding: 15px;
+  background: white;
+  max-width: 700px;
+  border: none;
+  margin-bottom: 2px;
+  width: 80%;
+}
+
+.searchbar:focus-visible {
+  outline-color: transparent !important;
+}
+
+#importanceSelector {
+  background-color: #f06d06;
+  border: 5px solid #f06d06;
+  text-align: center;
+  border-radius: 40px;
+  padding: 10px;
+  width: 20%;
+  margin-right: 3px;
+  font-size: 20;
+}
+
+.addTasks {
+  background-color: #f06d06;
+  border: 5px solid #f06d06;
+  text-align: center;
+  border-radius: 40px;
+  padding: 10px;
+  width: 20%;
+  margin-right: 3px;
+}
+
+.addTasks:hover {
+  color: white;
+}
+.addTasks:active {
+  color: black;
+}
+
+#taskCompleted {
+  background-color: #f06d06;
+  border: 5px solid #f06d06;
+  text-align: center;
+  border-radius: 40px;
+  padding: 10px;
+  width: 20%;
+  margin-right: 3px;
+}
+
+#taskCompleted:hover {
+  color: white;
+}
+
+#taskCompleted:active {
+  color: black;
+}
+
+#inputtedTasks {
+  text-align: center;
+}
+
+.tasks {
+  width: 700px;
+  border: 15px solid #f06d06;
+  margin: 10px auto;
+  background: #f06d06;
+  border-radius: 25px;
+  font-size: 15px;
+  color: white;
+  text-align: start;
+}
+
+.tasks > i {
+  color: black;
+}
+
+.checkButton {
+  background-color: #f06d06;
+  border: 2px solid #f06d06;
+}
+
+.checkButton:hover {
+  color: white;
+}
+
+.checkButton:active {
+  color: black;
+}
+
+.deleteButton {
+  background-color: #f06d06;
+  border: 2px solid #f06d06;
+}
+
+.deleteButton:hover {
+  color: white;
+}
+
+.deleteButton:active {
+  color: black;
+}
+
+.icons {
+  float: right;
+  color: blacks;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style></style>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="script.js"></script>
+  <body>
+    <h1>Debug Lab's To Do List</h1>
+
+    <div class="list">
+      <div id="search">
+        <div class="bar">
+          <input
+            type="search"
+            class="searchbar"
+            placeholder="Write Your Tasks Here"
+            id="inputTask"
+            size="85"
+          />
+          <select name="taskImportance" id="importanceSelector">
+            <option value="Priority" disabled selected>Priority</option>
+            <option value="Critical">Critical</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <button class="addTasks" onclick="addTasks()">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+          <button id="taskCompleted" onClick="listTasks()">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div id="inputtedTasks"></div>
+      </div>
+    </div>
+  </body>
+</html>
