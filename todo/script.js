@@ -1,9 +1,4 @@
-var allTasks = [
-  {
-    name: "I Gonna Earn 1M This Year",
-    priority: "Critical",
-  },
-];
+var allTasks = [];
 
 var taskCompleted = [];
 
@@ -47,16 +42,30 @@ function addTasks() {
     };
     allTasks.push(task);
     $("#inputTask").val("");
-    loadList(); // Refresh the task list in the UI
+    loadList();
   }
 }
 
 function completeTask(i) {
-  loadList();
   var tempTask = [];
   for (var k = 0; k < allTasks.length; k++) {
     if (k == i) {
-      taskCompleted.push(allTasks[k]);
+      var date = new Date();
+      var options = { hour: "numeric", minute: "numeric", hour12: true };
+      var time = new Intl.DateTimeFormat("en-US", options).format(date);
+      var formattedDate =
+        time +
+        " " +
+        date.getDate() +
+        " " +
+        date.toLocaleString("en-US", { month: "long" }) +
+        " " +
+        date.getFullYear();
+      var completedTask = {
+        ...allTasks[k],
+        completedDate: formattedDate,
+      };
+      taskCompleted.push(completedTask);
     } else {
       tempTask.push(allTasks[k]);
     }
@@ -84,6 +93,8 @@ function listTasks() {
       taskCompleted[i].name +
       "</td><td>" +
       taskCompleted[i].priority +
+      "</td><td>" +
+      taskCompleted[i].completedDate +
       "</td></tr>";
   }
   $("#completedTasksTable").html(tableHtml);

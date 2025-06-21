@@ -184,7 +184,7 @@ title {
   background-color: #3498db; /* Blue */
 }
 
-priority-pill.low {
+.priority-pill.low {
   background-color: #2ecc71; /* Green */
 }
 
@@ -207,4 +207,22 @@ priority-pill.low {
   border: 1px solid #888;
   width: 50%;
   border-radius: 8px;
+  max-width: 600px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
