@@ -1,0 +1,12 @@
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  text-align: center;
+}
+
+header {
+  background-color: #f06d06;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
