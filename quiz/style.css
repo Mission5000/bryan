@@ -19,3 +19,8 @@ h1 {
   padding: 10px;
   text-align: left;
 }
+
+title-link {
+  color: white;
+  text-decoration: none;
+}
