@@ -27,7 +27,7 @@ h1 {
   transition: color 0.3s ease;
 }
 
-.questionText {
+#questionText {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
