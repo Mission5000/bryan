@@ -38,7 +38,7 @@ h1 {
   padding: 10px;
 }
 
-.optionsContainer {
+#optionsContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
