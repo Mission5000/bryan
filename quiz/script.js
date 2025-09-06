@@ -78,6 +78,5 @@ var score = 0;
 var quizContainer = document.getElementById("quiz-container");
 var questionElement = document.getElementById("question");
 var answersElement = document.getElementById("answers");
-var nextButton = document.getElementById("next-button");
 var scoreElement = document.getElementById("score");
 var restartButton = document.getElementById("restart-button");
