@@ -1,104 +1,83 @@
 var allQuestions = [
   {
     question: "What is the capital city of Canada?",
-    answers: {
-      a: "Toronto",
-      b: "Vancouver",
-      c: "Ottawa",
-      d: "Montreal",
-    },
-    correctAnswer: "c",
+    answers: ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    correctAnswer: 2,
   },
   {
     question: "Which planet is known as the Red Planet?",
-    answers: {
-      a: "Earth",
-      b: "Mars",
-      c: "Jupiter",
-      d: "Saturn",
-    },
-    correctAnswer: "b",
+    answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+    correctAnswer: 1,
   },
   {
     question: "What is the largest mammal?",
-    answers: {
-      a: "Elephant",
-      b: "Blue Whale",
-      c: "Giraffe",
-      d: "Great White Shark",
-    },
-    correctAnswer: "b",
+    answers: ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+    correctAnswer: 1,
   },
   {
     question: "Who painted the famous artwork The Starry Night?",
-    answers: {
-      a: "Pablo Picasso",
-      b: "Vincent van Gogh",
-      c: "Claude Monet",
-      d: "Leonardo da Vinci",
-    },
-    correctAnswer: "b",
+    answers: [
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Claude Monet",
+      "Leonardo da Vinci",
+    ],
+    correctAnswer: 1,
   },
   {
     question: "In which year did World War II end?",
-    answers: {
-      a: "1943",
-      b: "1944",
-      c: "1945",
-      d: "1946",
-    },
-    correctAnswer: "c",
+    answers: ["1943", "1944", "1945", "1946"],
+    correctAnswer: 2,
   },
   {
     question: "Who wrote the play Romeo and Juliet?",
-    answers: {
-      a: "William Shakespeare",
-      b: "Charles Dickens",
-      c: "Taylor Swift",
-      d: "George Bernard Shaw",
-    },
-    correctAnswer: "a",
+    answers: [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Taylor Swift",
+      "George Bernard Shaw",
+    ],
+    correctAnswer: 0,
   },
   {
     question: "Which country has the most official languages?",
-    answers: {
-      a: "Switzerland",
-      b: "India",
-      c: "South Africa",
-      d: "Zimbabwe",
-    },
-    correctAnswer: "d",
+    answers: ["Switzerland", "India", "South Africa", "Zimbabwe"],
+    correctAnswer: 1,
   },
   {
     question:
       "Which 14th-century manuscript remains undeciphered despite modern analysis?",
-    answers: {
-      a: "The Codex Seraphinianus",
-      b: "The Book of Kells",
-      c: "The Voynich Manuscript",
-      d: "The Ripley Scroll",
-    },
-    correctAnswer: "c",
+    answers: [
+      "The Codex Seraphinianus",
+      "The Book of Kells",
+      "The Voynich Manuscript",
+      "The Ripley Scroll",
+    ],
+    correctAnswer: 2,
   },
   {
     question: `Who wrote the "Book of Healing" that is not about medicine?`,
-    answers: {
-      a: "Hippocrates",
-      b: "Ibn Sina (Avicenna)",
-      c: "Galen",
-      d: "Al-Farabi",
-    },
-    correctAnswer: "b",
+    answers: ["Hippocrates", "Ibn Sina (Avicenna)", "Galen", "Al-Farabi"],
+    correctAnswer: 1,
   },
   {
     question:
       "What was the code name of the German plan to invade Switzerland during WWII?",
-    answers: {
-      a: "Operation Tannenbaum",
-      b: "Operation Sea Lion",
-      c: "Operation Barbarossa",
-      d: "Operation Valkyrie",
-    },
-    correctAnswer: "a",
+    answers: [
+      "Operation Tannenbaum",
+      "Operation Sea Lion",
+      "Operation Barbarossa",
+      "Operation Valkyrie",
+    ],
+    correctAnswer: 0,
   },
 ];
+
+var currentQuestionIndex = 0;
+var score = 0;
+var quizContainer = document.getElementById("quiz-container");
+var questionElement = document.getElementById("question");
+var answersElement = document.getElementById("answers");
+var nextButton = document.getElementById("next-button");
+var scoreElement = document.getElementById("score");
+var restartButton = document.getElementById("restart-button");
