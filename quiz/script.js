@@ -98,30 +98,3 @@ function showQuestion() {
   restartButton.style.display = "none";
   quizContainer.style.display = "block";
 }
-
-function selectAnswer(selectedIndex) {
-  var currentQuestion = allQuestions[currentQuestionIndex];
-  if (selectedIndex === currentQuestion.correctAnswer) {
-    score++;
-  }
-  currentQuestionIndex++;
-  if (currentQuestionIndex < allQuestions.length) {
-    showQuestion();
-  } else {
-    showFinalScore();
-  }
-}
-function showFinalScore() {
-  questionElement.textContent = `Quiz Over! Your final score is ${score} out of ${allQuestions.length}.`;
-  answersElement.innerHTML = "";
-  scoreElement.textContent = "";
-  restartButton.style.display = "block";
-  quizContainer.style.display = "block";
-}
-function restartQuiz() {
-  currentQuestionIndex = 0;
-  score = 0;
-  showQuestion();
-}
-restartButton.onclick = restartQuiz;
-showQuestion();
