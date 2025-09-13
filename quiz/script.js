@@ -80,3 +80,48 @@ var questionElement = document.getElementById("question");
 var answersElement = document.getElementById("answers");
 var scoreElement = document.getElementById("score");
 var restartButton = document.getElementById("restart-button");
+
+function showQuestion() {
+  var currentQuestion = allQuestions[currentQuestionIndex];
+  questionElement.textContent = currentQuestion.question;
+  answersElement.innerHTML = "";
+
+  currentQuestion.answers.forEach((answer, index) => {
+    var answerButton = document.createElement("button");
+    answerButton.textContent = answer;
+    answerButton.className = "answer-button";
+    answerButton.onclick = () => selectAnswer(index);
+    answersElement.appendChild(answerButton);
+  });
+  scoreElement.textContent = `Score: ${score}`;
+
+  restartButton.style.display = "none";
+  quizContainer.style.display = "block";
+}
+
+function selectAnswer(selectedIndex) {
+  var currentQuestion = allQuestions[currentQuestionIndex];
+  if (selectedIndex === currentQuestion.correctAnswer) {
+    score++;
+  }
+  currentQuestionIndex++;
+  if (currentQuestionIndex < allQuestions.length) {
+    showQuestion();
+  } else {
+    showFinalScore();
+  }
+}
+function showFinalScore() {
+  questionElement.textContent = `Quiz Over! Your final score is ${score} out of ${allQuestions.length}.`;
+  answersElement.innerHTML = "";
+  scoreElement.textContent = "";
+  restartButton.style.display = "block";
+  quizContainer.style.display = "block";
+}
+function restartQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  showQuestion();
+}
+restartButton.onclick = restartQuiz;
+showQuestion();
