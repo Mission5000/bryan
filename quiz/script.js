@@ -81,20 +81,26 @@ var answersElement = document.getElementById("answers");
 var scoreElement = document.getElementById("score");
 var restartButton = document.getElementById("restart-button");
 
-function showQuestion() {
-  var currentQuestion = allQuestions[currentQuestionIndex];
-  questionElement.textContent = currentQuestion.question;
-  answersElement.innerHTML = "";
+document.addEventListener("DOMContentLoaded", () => {
+  const mainScreen = document.querySelector(".mainScreen");
+  const interfaceScreen = document.querySelector(".interface");
+  const startButton = document.getElementById("startButton");
 
-  currentQuestion.answers.forEach((answer, index) => {
-    var answerButton = document.createElement("button");
-    answerButton.textContent = answer;
-    answerButton.className = "answer-button";
-    answerButton.onclick = () => selectAnswer(index);
-    answersElement.appendChild(answerButton);
+  // Hide quiz interface and show main menu on load
+  mainScreen.style.display = "block";
+  interfaceScreen.style.display = "none";
+
+  // When Start Quizzy is clicked
+  startButton.addEventListener("click", () => {
+    mainScreen.style.display = "none";
+    interfaceScreen.style.display = "block";
+
+    // Load first question (example)
+    document.getElementById("questionText").textContent =
+      "What is the capital of France?";
+    document.getElementById("option1").textContent = "Paris";
+    document.getElementById("option2").textContent = "Berlin";
+    document.getElementById("option3").textContent = "Madrid";
+    document.getElementById("option4").textContent = "Rome";
   });
-  scoreElement.textContent = `Score: ${score}`;
-
-  restartButton.style.display = "none";
-  quizContainer.style.display = "block";
-}
+});
