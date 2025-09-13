@@ -27,6 +27,22 @@ h1 {
   transition: color 0.3s ease;
 }
 
+.mainScreen {
+  padding: 20px;
+}
+
+#startButton {
+  background-color: #f06d06;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 #questionText {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.5rem;

@@ -86,16 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const interfaceScreen = document.querySelector(".interface");
   const startButton = document.getElementById("startButton");
 
-  // Hide quiz interface and show main menu on load
   mainScreen.style.display = "block";
   interfaceScreen.style.display = "none";
 
-  // When Start Quizzy is clicked
   startButton.addEventListener("click", () => {
     mainScreen.style.display = "none";
     interfaceScreen.style.display = "block";
 
-    // Load first question (example)
     document.getElementById("questionText").textContent =
       "What is the capital of France?";
     document.getElementById("option1").textContent = "Paris";
