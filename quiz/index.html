@@ -6,7 +6,16 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <style>
+      .mainScreen {
+        display: block;
+      }
+      .interface {
+        display: none;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <h1>
@@ -15,6 +24,11 @@
         >
       </h1>
     </header>
+
+    <div class="mainScreen">
+      <h1>Welcome to Quizzy</h1>
+      <button id="startButton">Start Quizzy</button>
+    </div>
 
     <div class="interface">
       <div id="questionContainer">
