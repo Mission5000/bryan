@@ -31,7 +31,12 @@ var allQuestions = [
   },
   {
     question: "Who wrote the play Romeo and Juliet?",
-    answers: ["William Shakespeare","Charles Dickens","Taylor Swift","George Bernard Shaw"],
+    answers: [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Taylor Swift",
+      "George Bernard Shaw",
+    ],
     correctAnswer: 0,
   },
   {
@@ -58,7 +63,12 @@ var allQuestions = [
   {
     question:
       "What was the code name of the German plan to invade Switzerland during WWII?",
-    answers: ["Operation Tannenbaum","Operation Sea Lion","Operation Barbarossa","Operation Valkyrie"],
+    answers: [
+      "Operation Tannenbaum",
+      "Operation Sea Lion",
+      "Operation Barbarossa",
+      "Operation Valkyrie",
+    ],
     correctAnswer: 0,
   },
 ];
@@ -70,24 +80,3 @@ var questionElement = document.getElementById("question");
 var answersElement = document.getElementById("answers");
 var scoreElement = document.getElementById("score");
 var restartButton = document.getElementById("restart-button");
-
-document.addEventListener("DOMContentLoaded", () => {
-  const mainScreen = document.querySelector(".mainScreen");
-  const interfaceScreen = document.querySelector(".interface");
-  const startButton = document.getElementById("startButton");
-
-  mainScreen.style.display = "block";
-  interfaceScreen.style.display = "none";
-
-  startButton.addEventListener("click", () => {
-    mainScreen.style.display = "none";
-    interfaceScreen.style.display = "block";
-
-    document.getElementById("questionText").textContent =
-      "What is the capital of France?";
-    document.getElementById("option1").textContent = "Paris";
-    document.getElementById("option2").textContent = "Berlin";
-    document.getElementById("option3").textContent = "Madrid";
-    document.getElementById("option4").textContent = "Rome";
-  });
-});
