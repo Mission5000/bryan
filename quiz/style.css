@@ -20,6 +20,13 @@ h1 {
   text-align: left;
 }
 
+h3 {
+  font-size: 1.5em;
+  margin: 0px;
+  padding: 10px;
+  text-align: left;
+}
+
 .title-link {
   text-decoration: none;
   color: white;

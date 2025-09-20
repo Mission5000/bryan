@@ -31,12 +31,7 @@ var allQuestions = [
   },
   {
     question: "Who wrote the play Romeo and Juliet?",
-    answers: [
-      "William Shakespeare",
-      "Charles Dickens",
-      "Taylor Swift",
-      "George Bernard Shaw",
-    ],
+    answers: ["William Shakespeare","Charles Dickens","Taylor Swift","George Bernard Shaw"],
     correctAnswer: 0,
   },
   {
@@ -63,12 +58,7 @@ var allQuestions = [
   {
     question:
       "What was the code name of the German plan to invade Switzerland during WWII?",
-    answers: [
-      "Operation Tannenbaum",
-      "Operation Sea Lion",
-      "Operation Barbarossa",
-      "Operation Valkyrie",
-    ],
+    answers: ["Operation Tannenbaum","Operation Sea Lion","Operation Barbarossa","Operation Valkyrie"],
     correctAnswer: 0,
   },
 ];
