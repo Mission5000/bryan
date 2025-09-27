@@ -20,18 +20,18 @@ h1 {
   text-align: left;
 }
 
-h3 {
-  font-size: 1.5em;
-  margin: 0px;
-  padding: 10px;
-  text-align: right;
-}
-
 .title-link {
   text-decoration: none;
   color: white;
   cursor: pointer;
   transition: color 0.3s ease;
+}
+
+h3 {
+  font-size: 2.5em;
+  margin: 0px;
+  padding: 10px;
+  text-align: right;
 }
 
 .mainScreen {

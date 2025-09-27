@@ -16,12 +16,7 @@ var allQuestions = [
   },
   {
     question: "Who painted the famous artwork The Starry Night?",
-    answers: [
-      "Pablo Picasso",
-      "Vincent van Gogh",
-      "Claude Monet",
-      "Leonardo da Vinci",
-    ],
+    answers: ["Pablo Picasso","Vincent van Gogh","Claude Monet","Leonardo da Vinci"],
     correctAnswer: 1,
   },
   {
@@ -31,12 +26,7 @@ var allQuestions = [
   },
   {
     question: "Who wrote the play Romeo and Juliet?",
-    answers: [
-      "William Shakespeare",
-      "Charles Dickens",
-      "Taylor Swift",
-      "George Bernard Shaw",
-    ],
+    answers: ["William Shakespeare","Charles Dickens","Taylor Swift","George Bernard Shaw"],
     correctAnswer: 0,
   },
   {
@@ -47,12 +37,7 @@ var allQuestions = [
   {
     question:
       "Which 14th-century manuscript remains undeciphered despite modern analysis?",
-    answers: [
-      "The Codex Seraphinianus",
-      "The Book of Kells",
-      "The Voynich Manuscript",
-      "The Ripley Scroll",
-    ],
+    answers: ["The Codex Seraphinianus","The Book of Kells","The Voynich Manuscript","The Ripley Scroll"],
     correctAnswer: 2,
   },
   {
@@ -63,12 +48,7 @@ var allQuestions = [
   {
     question:
       "What was the code name of the German plan to invade Switzerland during WWII?",
-    answers: [
-      "Operation Tannenbaum",
-      "Operation Sea Lion",
-      "Operation Barbarossa",
-      "Operation Valkyrie",
-    ],
+    answers: ["Operation Tannenbaum","Operation Sea Lion","Operation Barbarossa","Operation Valkyrie"],
     correctAnswer: 0,
   },
 ];
